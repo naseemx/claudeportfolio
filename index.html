@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naseem Shan - Developer & Designer</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Sticky Header/Navigation -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="#hero">NS</a>
+            </div>
+            <nav class="nav">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#on-code" class="nav-link">On Code</a>
+                <a href="#on-design" class="nav-link">On Design</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="burger-menu" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+            <a href="#hero" class="mobile-nav-link">Home</a>
+            <a href="#on-code" class="mobile-nav-link">On Code</a>
+            <a href="#on-design" class="mobile-nav-link">On Design</a>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-label">Full-Stack Developer & Creative Designer</div>
+                    <h1 class="hero-title">
+                        <span class="hero-line">Naseem</span>
+                        <span class="hero-line">Shan</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        <span class="subtitle-line">Builds Web &</span>
+                        <span class="subtitle-line">Visual Experiences</span>
+                    </h2>
+                    <p class="hero-description">
+                        Crafting digital experiences that blend cutting-edge technology with stunning visual design.
+                        From concept to deployment, creating solutions that make an impact.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Contact</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-layer layer-1"></div>
+                    <div class="visual-layer layer-2"></div>
+                    <div class="visual-layer layer-3"></div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- ON CODE Section -->
+        <section id="on-code" class="code-section">
+            <div class="section-header">
+                <h2 class="section-title split-text">
+                    <span class="title-line">ON</span>
+                    <span class="title-line accent">CODE</span>
+                </h2>
+                <p class="section-description">
+                    Building robust, scalable applications with modern technologies.
+                    Specializing in React, Next.js, Node.js, and creating seamless full-stack solutions.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image-wrapper">
+                        <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">
+                            Full-featured online store with payment integration, inventory management, and admin dashboard.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Stripe</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Site →</a>
+                            <a href="#" class="project-link">Code →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image-wrapper">
+                        <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Analytics Dashboard</h3>
+                        <p class="project-description">
+                            Real-time data visualization platform with interactive charts and custom reporting features.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">D3.js</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Site →</a>
+                            <a href="#" class="project-link">Code →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image-wrapper">
+                        <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">SaaS Collaboration Tool</h3>
+                        <p class="project-description">
+                            Team collaboration platform with real-time updates, file sharing, and project management.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Socket.io</span>
+                            <span class="tag">Tailwind</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Site →</a>
+                            <span class="project-link disabled">Private</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image-wrapper">
+                        <div class="project-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Content Generator</h3>
+                        <p class="project-description">
+                            AI-powered content creation tool with natural language processing and custom workflows.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">OpenAI API</span>
+                            <span class="tag">Prisma</span>
+                            <span class="tag">Redis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Site →</a>
+                            <a href="#" class="project-link">Code →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ON DESIGN Section -->
+        <section id="on-design" class="design-section">
+            <div class="section-header">
+                <h2 class="section-title split-text">
+                    <span class="title-line">ON</span>
+                    <span class="title-line accent">DESIGN</span>
+                </h2>
+                <p class="section-description">
+                    Creating compelling visual identities, intuitive interfaces, and memorable brand experiences
+                    that resonate with audiences.
+                </p>
+            </div>
+
+            <!-- Marquee -->
+            <div class="marquee-container">
+                <div class="marquee">
+                    <span>Branding</span>
+                    <span>·</span>
+                    <span>UI Design</span>
+                    <span>·</span>
+                    <span>Posters</span>
+                    <span>·</span>
+                    <span>Visual Identity</span>
+                    <span>·</span>
+                    <span>Illustrations</span>
+                    <span>·</span>
+                    <span>Motion Graphics</span>
+                    <span>·</span>
+                </div>
+                <div class="marquee" aria-hidden="true">
+                    <span>Branding</span>
+                    <span>·</span>
+                    <span>UI Design</span>
+                    <span>·</span>
+                    <span>Posters</span>
+                    <span>·</span>
+                    <span>Visual Identity</span>
+                    <span>·</span>
+                    <span>Illustrations</span>
+                    <span>·</span>
+                    <span>Motion Graphics</span>
+                    <span>·</span>
+                </div>
+            </div>
+
+            <div class="design-gallery">
+                <div class="design-item" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <div class="design-overlay">
+                        <h4>Tech Startup Branding</h4>
+                        <p>Complete visual identity</p>
+                    </div>
+                </div>
+                <div class="design-item" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <div class="design-overlay">
+                        <h4>Music Festival Poster</h4>
+                        <p>Event marketing materials</p>
+                    </div>
+                </div>
+                <div class="design-item" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <div class="design-overlay">
+                        <h4>Mobile App UI Kit</h4>
+                        <p>Component library</p>
+                    </div>
+                </div>
+                <div class="design-item" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                    <div class="design-overlay">
+                        <h4>E-Commerce Redesign</h4>
+                        <p>UX/UI overhaul</p>
+                    </div>
+                </div>
+                <div class="design-item" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                    <div class="design-overlay">
+                        <h4>Restaurant Branding</h4>
+                        <p>Logo & menu design</p>
+                    </div>
+                </div>
+                <div class="design-item" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                    <div class="design-overlay">
+                        <h4>SaaS Dashboard UI</h4>
+                        <p>Admin interface design</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Hall of Fame -->
+        <section id="projects" class="hall-of-fame">
+            <div class="section-header">
+                <h2 class="section-title split-text">
+                    <span class="title-line">Project</span>
+                    <span class="title-line accent">Hall of Fame</span>
+                </h2>
+            </div>
+
+            <div class="fame-timeline">
+                <article class="fame-card">
+                    <div class="fame-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="fame-content">
+                        <span class="fame-year">2024</span>
+                        <h3 class="fame-title">Global SaaS Platform</h3>
+                        <p class="fame-result">+120% user growth · 50ms avg response time</p>
+                    </div>
+                </article>
+
+                <article class="fame-card">
+                    <div class="fame-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="fame-content">
+                        <span class="fame-year">2024</span>
+                        <h3 class="fame-title">E-Commerce Redesign</h3>
+                        <p class="fame-result">+85% conversion rate · 40% faster checkout</p>
+                    </div>
+                </article>
+
+                <article class="fame-card">
+                    <div class="fame-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="fame-content">
+                        <span class="fame-year">2023</span>
+                        <h3 class="fame-title">Brand Identity System</h3>
+                        <p class="fame-result">3 awards · Featured in design publications</p>
+                    </div>
+                </article>
+
+                <article class="fame-card">
+                    <div class="fame-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                    <div class="fame-content">
+                        <span class="fame-year">2023</span>
+                        <h3 class="fame-title">Real-Time Analytics</h3>
+                        <p class="fame-result">1M+ events/day · 99.9% uptime</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2 class="section-title split-text">
+                        <span class="title-line">The</span>
+                        <span class="title-line accent">Story</span>
+                    </h2>
+
+                    <div class="story-blocks">
+                        <div class="story-block">
+                            <span class="story-label">The Beginning</span>
+                            <h3>First Website</h3>
+                            <p>
+                                Started coding at 15, building my first website with HTML and CSS.
+                                What began as curiosity turned into a passion for creating digital experiences.
+                            </p>
+                        </div>
+
+                        <div class="story-block">
+                            <span class="story-label">The Turning Point</span>
+                            <h3>Design Meets Code</h3>
+                            <p>
+                                Discovered the power of combining technical skills with design thinking.
+                                Learned that great products need both beautiful interfaces and solid engineering.
+                            </p>
+                        </div>
+
+                        <div class="story-block">
+                            <span class="story-label">The Milestone</span>
+                            <h3>First Major Project</h3>
+                            <p>
+                                Launched a platform that reached 100K users in its first year.
+                                This success validated my approach of building user-centric, scalable solutions.
+                            </p>
+                        </div>
+
+                        <div class="story-block">
+                            <span class="story-label">Today</span>
+                            <h3>Full-Stack Creator</h3>
+                            <p>
+                                Now working on ambitious projects that push boundaries, mentoring aspiring developers,
+                                and continuously learning new technologies and design trends.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-image"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Stack -->
+        <section class="skills-section">
+            <h2 class="section-title split-text centered">
+                <span class="title-line">Skills &</span>
+                <span class="title-line accent">Stack</span>
+            </h2>
+
+            <!-- Tech Marquee -->
+            <div class="tech-marquee-container">
+                <div class="tech-marquee">
+                    <span>React</span>
+                    <span>·</span>
+                    <span>Next.js</span>
+                    <span>·</span>
+                    <span>Node.js</span>
+                    <span>·</span>
+                    <span>TypeScript</span>
+                    <span>·</span>
+                    <span>Tailwind</span>
+                    <span>·</span>
+                    <span>Figma</span>
+                    <span>·</span>
+                    <span>Adobe CC</span>
+                    <span>·</span>
+                    <span>GSAP</span>
+                    <span>·</span>
+                    <span>PostgreSQL</span>
+                    <span>·</span>
+                    <span>MongoDB</span>
+                    <span>·</span>
+                    <span>Docker</span>
+                    <span>·</span>
+                </div>
+                <div class="tech-marquee" aria-hidden="true">
+                    <span>React</span>
+                    <span>·</span>
+                    <span>Next.js</span>
+                    <span>·</span>
+                    <span>Node.js</span>
+                    <span>·</span>
+                    <span>TypeScript</span>
+                    <span>·</span>
+                    <span>Tailwind</span>
+                    <span>·</span>
+                    <span>Figma</span>
+                    <span>·</span>
+                    <span>Adobe CC</span>
+                    <span>·</span>
+                    <span>GSAP</span>
+                    <span>·</span>
+                    <span>PostgreSQL</span>
+                    <span>·</span>
+                    <span>MongoDB</span>
+                    <span>·</span>
+                    <span>Docker</span>
+                    <span>·</span>
+                </div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>React / Next.js</li>
+                        <li>TypeScript / JavaScript</li>
+                        <li>Tailwind / CSS3</li>
+                        <li>GSAP / Framer Motion</li>
+                        <li>Three.js / WebGL</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Node.js / Express</li>
+                        <li>PostgreSQL / MongoDB</li>
+                        <li>REST / GraphQL APIs</li>
+                        <li>Redis / Caching</li>
+                        <li>AWS / Vercel</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Design & Tools</h3>
+                    <ul>
+                        <li>Figma / Adobe XD</li>
+                        <li>Illustrator / Photoshop</li>
+                        <li>After Effects</li>
+                        <li>UI/UX Design</li>
+                        <li>Branding</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process-section">
+            <div class="process-sticky">
+                <h2 class="section-title split-text centered">
+                    <span class="title-line">How I</span>
+                    <span class="title-line accent">Work</span>
+                </h2>
+
+                <div class="process-steps">
+                    <div class="process-step" data-step="1">
+                        <div class="step-number">01</div>
+                        <h3>Discover</h3>
+                        <p>Understanding your vision, goals, and target audience through deep research and conversation.</p>
+                    </div>
+
+                    <div class="process-step" data-step="2">
+                        <div class="step-number">02</div>
+                        <h3>Plan</h3>
+                        <p>Creating a strategic roadmap with clear milestones, technical architecture, and design direction.</p>
+                    </div>
+
+                    <div class="process-step" data-step="3">
+                        <div class="step-number">03</div>
+                        <h3>Design</h3>
+                        <p>Crafting beautiful, intuitive interfaces with pixel-perfect attention to detail and user experience.</p>
+                    </div>
+
+                    <div class="process-step" data-step="4">
+                        <div class="step-number">04</div>
+                        <h3>Develop</h3>
+                        <p>Building robust, scalable solutions with clean code, best practices, and modern technologies.</p>
+                    </div>
+
+                    <div class="process-step" data-step="5">
+                        <div class="step-number">05</div>
+                        <h3>Launch</h3>
+                        <p>Deploying with confidence, monitoring performance, and iterating based on real-world feedback.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials-section">
+            <h2 class="section-title split-text centered">
+                <span class="title-line">Client</span>
+                <span class="title-line accent">Testimonials</span>
+            </h2>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "Exceptional work. The platform exceeded our expectations in both design and performance.
+                        A true professional who delivers on promises."
+                    </p>
+                    <div class="testimonial-author">
+                        <strong>Sarah Chen</strong>
+                        <span>CEO, TechStart Inc</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "Working with Naseem was seamless. Great communication, creative solutions,
+                        and the ability to turn complex requirements into elegant experiences."
+                    </p>
+                    <div class="testimonial-author">
+                        <strong>Marcus Rodriguez</strong>
+                        <span>Product Director, Innovation Labs</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "The redesign transformed our business. Conversion rates doubled and customer feedback
+                        has been overwhelmingly positive. Highly recommended."
+                    </p>
+                    <div class="testimonial-author">
+                        <strong>Emily Thompson</strong>
+                        <span>Founder, E-Commerce Ventures</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <div class="contact-header">
+                    <h2 class="section-title split-text">
+                        <span class="title-line">Always</span>
+                        <span class="title-line accent">Building Better</span>
+                        <span class="title-line accent">Experiences</span>
+                    </h2>
+                    <p class="contact-intro">
+                        Have a project in mind? Let's create something exceptional together.
+                    </p>
+                </div>
+
+                <div class="contact-content">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <label for="name">Your Name</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email">Email Address</label>
+                        </div>
+
+                        <div class="form-group">
+                            <select id="projectType" name="projectType" required>
+                                <option value="">Select Project Type</option>
+                                <option value="web-dev">Web Development</option>
+                                <option value="design">Design & Branding</option>
+                                <option value="full-stack">Full-Stack Project</option>
+                                <option value="consultation">Consultation</option>
+                            </select>
+                            <label for="projectType">Project Type</label>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            Send Message
+                            <span class="btn-arrow">→</span>
+                        </button>
+                    </form>
+
+                    <div class="contact-info">
+                        <div class="social-links">
+                            <a href="https://github.com" target="_blank" class="social-link">
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" class="social-link">
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://dribbble.com" target="_blank" class="social-link">
+                                <span>Dribbble</span>
+                            </a>
+                            <a href="https://behance.net" target="_blank" class="social-link">
+                                <span>Behance</span>
+                            </a>
+                        </div>
+
+                        <div class="contact-details">
+                            <p>Open to new opportunities and collaborations worldwide.</p>
+                            <p class="email-link">
+                                <a href="mailto:hello@naseemshan.com">hello@naseemshan.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2024 Naseem Shan. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://dribbble.com" target="_blank">Dribbble</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
