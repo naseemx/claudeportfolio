@@ -16,13 +16,35 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: initial;
+  overscroll-behavior: contain;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }
 
 body {
   font-family: var(--font-inter);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
 }
 
 /* Custom scrollbar for dark mode */
@@ -88,5 +110,138 @@ body {
 
 /* Smooth transitions */
 * {
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+  transition: background-color 0.3s cubic-bezier(0.65, 0.05, 0, 1),
+              border-color 0.3s cubic-bezier(0.65, 0.05, 0, 1);
+}
+
+/* Advanced clip-path animations */
+.clip-reveal {
+  clip-path: ellipse(0% 0% at 50% 50%);
+  transition: clip-path 0.75s cubic-bezier(0.65, 0.05, 0, 1);
+}
+
+.clip-reveal.active {
+  clip-path: ellipse(150% 150% at 50% 50%);
+}
+
+/* Parallax sections */
+.parallax-section {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Filter effects */
+.hover-invert {
+  transition: filter 0.75s cubic-bezier(0.65, 0.05, 0, 1);
+}
+
+.hover-invert:hover {
+  filter: invert(1) grayscale(1);
+}
+
+.hover-blur {
+  transition: filter 0.75s cubic-bezier(0.65, 0.05, 0, 1);
+}
+
+.hover-blur:hover {
+  filter: blur(4px);
+}
+
+/* Split text animations */
+.split-line {
+  clip-path: polygon(0 -2%, 100% -2%, 100% 102%, 0 102%);
+  display: block;
+  overflow: hidden;
+}
+
+.split-char {
+  display: inline-block;
+  transform-origin: center;
+}
+
+/* Marquee container */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.marquee-content {
+  display: inline-block;
+  padding-right: 100%;
+}
+
+/* Sticky scroll sections */
+.sticky-section {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+/* Performance optimizations */
+.gpu-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  will-change: transform, opacity;
+}
+
+/* Advanced hover states */
+.hover-lift {
+  transition: transform 0.75s cubic-bezier(0.65, 0.05, 0, 1),
+              box-shadow 0.75s cubic-bezier(0.65, 0.05, 0, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 60px rgba(99, 102, 241, 0.4);
+}
+
+/* Scroll reveal utilities */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.75s cubic-bezier(0.65, 0.05, 0, 1),
+              transform 0.75s cubic-bezier(0.65, 0.05, 0, 1);
+}
+
+.reveal-up.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: opacity 0.75s cubic-bezier(0.65, 0.05, 0, 1),
+              transform 0.75s cubic-bezier(0.65, 0.05, 0, 1);
+}
+
+.reveal-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: opacity 0.75s cubic-bezier(0.65, 0.05, 0, 1),
+              transform 0.75s cubic-bezier(0.65, 0.05, 0, 1);
+}
+
+.reveal-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.85);
+  transition: opacity 0.75s cubic-bezier(0.65, 0.05, 0, 1),
+              transform 0.75s cubic-bezier(0.65, 0.05, 0, 1);
+}
+
+.reveal-scale.active {
+  opacity: 1;
+  transform: scale(1);
 }

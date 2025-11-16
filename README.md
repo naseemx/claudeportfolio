@@ -1,38 +1,64 @@
 # Premium Portfolio Website
 
-A modern, single-page portfolio website for a full-stack web developer and creative designer. Built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.
+A world-class, single-page portfolio website for a full-stack web developer and creative designer. Built with Next.js, TypeScript, Tailwind CSS, and powered by advanced animation libraries including GSAP, Lenis smooth scroll, and Framer Motion.
 
-## Features
+**Inspired by premium websites like [landonorris.com](https://landonorris.com/)** with sophisticated scroll animations and cutting-edge visual effects.
 
-- **Modern Design**: Clean, Apple-inspired aesthetic with dark theme
-- **Smooth Animations**: Scroll-based animations and micro-interactions using Framer Motion
+## ✨ Advanced Features
+
+### 🎬 Professional-Grade Animations
+- **Lenis Smooth Scroll**: Buttery-smooth scrolling experience with physics-based easing
+- **GSAP ScrollTrigger**: Advanced scroll-triggered animations and parallax effects
+- **Split-Text Animations**: Character-by-character and line-by-line text reveals
+- **Clip-Path Reveals**: Sophisticated elliptical mask reveals on scroll
+- **Parallax Effects**: Multi-layer depth and movement on scroll
+- **Marquee Animations**: Infinite horizontal scrolling text sections
+- **3D Transforms**: Hardware-accelerated 3D card animations
+- **Blur & Filter Effects**: Dynamic blur-in and filter transitions
+
+### 🎨 Design Excellence
+- **Modern Design**: Clean, Apple/F1-inspired aesthetic with dark theme
 - **Glassmorphism Effects**: Beautiful frosted glass UI elements
-- **Fully Responsive**: Optimized for mobile, tablet, and desktop
-- **Interactive Components**: Hover effects, 3D transforms, and smooth transitions
+- **Gradient Animations**: Dynamic gradient backgrounds with parallax movement
+- **Custom Easing**: Cubic bezier curves matching premium sites (`cubic-bezier(0.65, 0.05, 0, 1)`)
+- **Hover States**: Advanced hover effects with scale, lift, and shadow transformations
 - **Dark/Light Mode**: Theme toggle in the navbar
-- **Performance Optimized**: Built with Next.js for optimal performance
+- **Fully Responsive**: Optimized for mobile, tablet, and desktop
 
-## Sections
+### ⚡ Performance Optimized
+- **GPU Acceleration**: Hardware-accelerated transforms for 60fps animations
+- **Will-Change Optimization**: Proper use of will-change for smooth performance
+- **Backface Visibility**: Hidden backfaces for 3D transforms
+- **Code Splitting**: Next.js automatic code splitting
+- **First Load**: Only 186 KB for the entire application
 
-1. **Hero** - Eye-catching introduction with animated 3D cards
-2. **About** - Professional background and journey
-3. **Skills** - Tech stack with interactive skill chips
-4. **Services** - What you offer with glassmorphism cards
-5. **Projects** - Featured work with detailed project cards
-6. **Case Study** - In-depth project highlight
-7. **Process** - How you work methodology
-8. **Testimonials** - Client feedback
-9. **Contact** - Contact form and social links
-10. **Footer** - Quick links and copyright
+## 📑 Sections
 
-## Tech Stack
+1. **Hero Enhanced** - Split-text animations, 3D floating cards with clip-path reveals
+2. **Marquee** - Infinite scrolling skills showcase (bidirectional)
+3. **About** - Professional background with staggered animations
+4. **Skills** - Interactive tech stack with animated proficiency bars
+5. **Marquee** - Secondary animated section divider
+6. **Services** - Glassmorphism cards with 3D tilt effects
+7. **Projects Enhanced** - Clip-path reveals, parallax scrolling, advanced hover states
+8. **Case Study** - In-depth project highlight with animated flow
+9. **Process** - Step-by-step workflow with connected animations
+10. **Testimonials** - Client feedback with floating animations
+11. **Contact** - Interactive form with glow effects
+12. **Footer** - Quick links and social connections
 
-- **Framework**: Next.js 14
+## 🛠 Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
 - **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Animations**: Framer Motion
+- **Styling**: Tailwind CSS with custom animations
+- **Animations**:
+  - **GSAP 3.12+** - Advanced scroll animations and timeline control
+  - **Lenis Smooth Scroll** - Physics-based smooth scrolling
+  - **Framer Motion 11+** - React animation library
+  - **Split-Type** - Text splitting for character animations
 - **Icons**: Lucide React
-- **Fonts**: Inter, Space Grotesk
+- **Fonts**: Inter, Space Grotesk (Google Fonts)
 
 ## Getting Started
 
@@ -62,31 +88,54 @@ npm run build
 npm start
 ```
 
-## Customization
+## 🎨 Customization
 
 ### Personal Information
 
 Update the following files with your information:
 
-- `components/Hero.tsx` - Your name and tagline
-- `components/About.tsx` - Your experience and background
-- `components/Skills.tsx` - Your tech stack
-- `components/Projects.tsx` - Your projects
+- `components/HeroEnhanced.tsx` - Your name, tagline, and intro text
+- `components/About.tsx` - Your experience, stats, and background
+- `components/Skills.tsx` - Your tech stack and proficiencies
+- `components/MarqueeSection.tsx` - Skills shown in scrolling marquee
+- `components/ProjectsEnhanced.tsx` - Your projects with images and details
 - `components/Contact.tsx` - Your email and social links
 - `app/layout.tsx` - Metadata and SEO information
 
-### Styling
+### Styling & Animations
 
-- Colors: Edit `tailwind.config.ts`
-- Fonts: Update in `app/globals.css`
-- Animations: Customize in component files using Framer Motion
+- **Colors**: Edit `tailwind.config.ts` - modify gradient colors and accents
+- **Fonts**: Update in `app/globals.css` - change font imports
+- **Animation Timing**: Adjust in `tailwind.config.ts` - modify keyframes and durations
+- **Easing Curves**: Customize cubic-bezier values for different feels
+- **GSAP Animations**: Modify ScrollTrigger settings in enhanced components
+- **Lenis Config**: Adjust smooth scroll settings in `components/SmoothScroll.tsx`
 
-## Performance
+### Animation Utilities
 
-- Optimized animations for 60fps
-- Lazy loading for images
-- Code splitting with Next.js
-- Minimal bundle size
+The site includes several reusable animation components:
+
+- **`GSAPScrollReveal`** - Wrap any element for scroll-triggered reveals
+  - Supports: fadeUp, fadeLeft, fadeRight, scale, clip animations
+- **`Marquee`** - Create infinite scrolling text sections
+  - Props: speed, reverse, className
+- **`SmoothScroll`** - Global smooth scroll provider (already in layout)
+
+Example usage:
+```tsx
+<GSAPScrollReveal animationType="fadeUp" delay={0.2}>
+  <YourComponent />
+</GSAPScrollReveal>
+```
+
+## 🚀 Performance
+
+- **60fps Animations**: GPU-accelerated transforms with proper will-change usage
+- **Optimized Scroll**: Lenis smooth scroll with requestAnimationFrame
+- **Code Splitting**: Next.js automatic code splitting
+- **Bundle Size**: 186 KB first load (including all animation libraries)
+- **Lazy Loading**: Components load only when needed
+- **Image Optimization**: Next.js Image component ready to use
 
 ## Browser Support
 

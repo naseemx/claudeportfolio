@@ -1,9 +1,10 @@
 import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
+import HeroEnhanced from '@/components/HeroEnhanced';
+import MarqueeSection from '@/components/MarqueeSection';
 import About from '@/components/About';
 import Skills from '@/components/Skills';
 import Services from '@/components/Services';
-import Projects from '@/components/Projects';
+import ProjectsEnhanced from '@/components/ProjectsEnhanced';
 import CaseStudy from '@/components/CaseStudy';
 import Process from '@/components/Process';
 import Testimonials from '@/components/Testimonials';
@@ -14,11 +15,13 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Navbar />
-      <Hero />
+      <HeroEnhanced />
+      <MarqueeSection />
       <About />
       <Skills />
+      <MarqueeSection />
       <Services />
-      <Projects />
+      <ProjectsEnhanced />
       <CaseStudy />
       <Process />
       <Testimonials />
